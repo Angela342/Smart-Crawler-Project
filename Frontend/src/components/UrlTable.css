@@ -1,0 +1,54 @@
+/* UrlTable.css */
+.content-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensures that column widths are fixed */
+}
+
+.content-table th,
+.content-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    overflow: hidden; /* Hides overflow content */
+    text-overflow: ellipsis; /* Adds ellipsis for overflow text */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.content-table th {
+    background-color: #f2f2f2;
+}
+
+/* Specific column widths */
+.content-table .id-col {
+    width: 5%; /* Narrow column for IDs */
+}
+
+.content-table .url-col {
+    width: 20%; /* Adjust the width as needed for URLs */
+}
+
+.content-table .content-col {
+    width: 50%; /* Adjust the width as needed for content */
+}
+
+.content-table .type-col {
+    width: 15%; /* Narrow column for content types */
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 1px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
